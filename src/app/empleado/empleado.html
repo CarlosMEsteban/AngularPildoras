@@ -5,3 +5,7 @@
 <p>Edad del empleado más 10: {{getEdad() + 10}}</p>
 <p>Mayor de edad: {{getEdad() >= 18 ? 'Sí' : 'No'}}</p>
 <p>Empresa del empleado: {{empresa}}</p>
+
+
+<input #nuevaEdad type="number" placeholder="Nueva edad" />
+<button type="button" (click)="cambiarEdad(+nuevaEdad)">Cambiar edad</button>

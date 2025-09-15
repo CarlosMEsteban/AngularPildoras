@@ -11,10 +11,15 @@ import { Component } from '@angular/core';
 export class Empleado {
   nombre = "Juan";
   apellido = "Perez";
-  private edad = 30;
+  private edad: number = 30;
   empresa = "Google";
 
   getEdad(): number {
     return this.edad;
+  }
+
+  cambiarEdad(nuevaEdad: number): void 
+  {
+    this.edad = Number(nuevaEdad);
   }
 }
