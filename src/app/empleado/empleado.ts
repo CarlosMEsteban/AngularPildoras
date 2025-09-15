@@ -18,8 +18,11 @@ export class Empleado {
     return this.edad;
   }
 
-  cambiarEdad(nuevaEdad: number): void 
+  cambiarEdad(nuevaEdad: String): void 
   {
-    this.edad = Number(nuevaEdad);
+    if(!isNaN(Number(nuevaEdad)) && Number(nuevaEdad) > 0) //
+      this.edad = Number(nuevaEdad);
+    else
+      this.edad = -1;
   }
 }

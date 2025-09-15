@@ -9,5 +9,5 @@
 
 
 <!--<input #nuevaEdad type="number" placeholder="Nueva edad" />-->
-<input #nuevaEdad type="number" placeholder="Nueva edad" (keyup)="cambiarEdad(+nuevaEdad.value)"/>
-<button type="button" (click)="cambiarEdad(+nuevaEdad.value)">Cambiar edad</button>
+<input #nuevaEdad type="text" placeholder="Nueva edad" (keyup)="cambiarEdad(nuevaEdad.value)"/>
+<button type="button" (click)="cambiarEdad(nuevaEdad.value)">Cambiar edad</button>
