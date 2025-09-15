@@ -9,5 +9,12 @@ import { Component } from '@angular/core';
   //styles: ["p { color:blue; }"] // Estilos en línea inline
 })
 export class Empleado {
+  nombre = "Juan";
+  apellido = "Perez";
+  private edad = 30;
+  empresa = "Google";
 
+  getEdad(): number {
+    return this.edad;
+  }
 }
