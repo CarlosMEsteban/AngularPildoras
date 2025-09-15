@@ -7,5 +7,7 @@
 <p>Empresa del empleado: {{empresa}}</p>
 
 
-<input #nuevaEdad type="number" placeholder="Nueva edad" />
-<button type="button" (click)="cambiarEdad(+nuevaEdad)">Cambiar edad</button>
+
+<!--<input #nuevaEdad type="number" placeholder="Nueva edad" />-->
+<input #nuevaEdad type="number" placeholder="Nueva edad" (keyup)="cambiarEdad(+nuevaEdad.value)"/>
+<button type="button" (click)="cambiarEdad(+nuevaEdad.value)">Cambiar edad</button>
