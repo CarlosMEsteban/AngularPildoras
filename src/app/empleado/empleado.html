@@ -11,3 +11,5 @@
 <!--<input #nuevaEdad type="number" placeholder="Nueva edad" />-->
 <input #nuevaEdad type="text" placeholder="Nueva edad" (keyup)="cambiarEdad(nuevaEdad.value)"/>
 <button type="button" (click)="cambiarEdad(nuevaEdad.value)">Cambiar edad</button>
+
+<p>{{(getEdad() == -1) ? "Ha introducido una edad incorrecta" : ""}}</p>
