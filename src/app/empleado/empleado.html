@@ -9,7 +9,15 @@
 
 
 <!--<input #nuevaEdad type="number" placeholder="Nueva edad" />-->
-<input #nuevaEdad type="text" placeholder="Nueva edad" (keyup)="cambiarEdad(nuevaEdad.value)"/>
-<button type="button" (click)="cambiarEdad(nuevaEdad.value)">Cambiar edad</button>
+<input #nuevaEdad type="text" placeholder="Nueva edad" (keyup)="cambiarEdad(nuevaEdad.value)" [disabled]=nuevaEdadProperty/>
+qafewdfewdf<button type="button" (click)="cambiarDisabled()">{{nuevaEdadProperty}}</button>ewfwegrf
+<!--<button type="button" (click)="cambiarEdad(nuevaEdad.value)">Cambiar edad</button>-->
+
 
 <p>{{(getEdad() == -1) ? "Ha introducido una edad incorrecta" : ""}}</p>
+
+<br/>
+<br/>
+<br/>
+
+Registrado <input type="checkbox" id="registro" [checked]=usuRegistrado/>

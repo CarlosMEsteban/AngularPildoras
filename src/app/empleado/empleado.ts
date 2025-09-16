@@ -14,6 +14,10 @@ export class Empleado {
   private edad: number = 30;
   empresa = "Google";
 
+  nuevaEdadProperty = false;
+
+  usuRegistrado = true;
+
   getEdad(): number {
     return this.edad;
   }
@@ -24,5 +28,10 @@ export class Empleado {
       this.edad = Number(nuevaEdad);
     else
       this.edad = -1;
+  }
+
+  cambiarDisabled(): void
+  {
+    this.nuevaEdadProperty = !this.nuevaEdadProperty;
   }
 }
