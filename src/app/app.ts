@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Empleados } from './empleados/empleados';
+import { Productos } from './productos/productos';
 
 
 // Decorador
 @Component({
   selector: 'app-root', // Es lo que se pone en el index.html para que se cargue este componente
-  imports: [RouterOutlet, Empleados],
+  imports: [RouterOutlet, Empleados, Productos],
   templateUrl: './app.html', // La plantilla HTML de este componente está en el archivo app.html
   styleUrl: './app.css',  
 })

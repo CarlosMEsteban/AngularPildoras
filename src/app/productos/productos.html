@@ -1,1 +1,7 @@
 <p>productos works!</p>
+
+<ul>
+    <li *ngFor="let producto of listaProductos">
+        {{ producto.getNombre() }} - {{ producto.getCoste() }}
+    </li>
+</ul>
